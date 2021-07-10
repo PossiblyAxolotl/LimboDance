@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://darkmode.gd" type="Script" id=1]
+[ext_resource path="res://menu/inside.png" type="Texture" id=2]
+
+[sub_resource type="Shader" id=1]
+code = "shader_type canvas_item;
+render_mode unshaded;
+
+void fragment() {
+	vec4 c = textureLod(SCREEN_TEXTURE, SCREEN_UV, 0.0).rgba;
+	c.r = 1.0 - c.r;
+	c.g = 1.0 - c.g;
+	c.b = 1.0 - c.b;
+	COLOR.rgba=c;
+}"
+
+[sub_resource type="ShaderMaterial" id=2]
+shader = SubResource( 1 )
+
+[node name="Control" type="Node2D"]
+visible = false
+script = ExtResource( 1 )
+
+[node name="inside" type="Sprite" parent="."]
+material = SubResource( 2 )
+position = Vector2( 641.049, 357.29 )
+scale = Vector2( 34.1039, 19.3806 )
+texture = ExtResource( 2 )
