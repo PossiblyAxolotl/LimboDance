@@ -1,7 +1,7 @@
 # LimboDance
 My remake of Limbo Dance from the first Mario Party
 
-Find builds here: https://possiblyaxolotl.itch.io/ldr
+Find builds here: https://possiblyaxolotl.itch.io/ldr/download/yJhVnxnI3xy5QbWvf4a7UwMexW2Axr1SZHjXkDFe
 
 Video on me making it: (COMING SOON)
 
