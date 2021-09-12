@@ -14,8 +14,9 @@ config/name="Limbo Dance"
 run/main_scene="res://menu/title.tscn"
 config/use_custom_user_dir=true
 config/custom_user_dir_name="PossiblyAxolotl Games/GloMan idk"
-boot_splash/image="res://pfp.png"
+boot_splash/image="res://player/blk.png"
 boot_splash/fullsize=false
+boot_splash/use_filter=false
 boot_splash/bg_color=Color( 0, 0, 0, 1 )
 config/icon="res://icon.png"
 
