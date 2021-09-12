@@ -32,6 +32,9 @@ func _physics_process(delta) -> void:
 
 func die() -> void:
 	playing = false
+	$"../todd/AnimationPlayer".stop()
+	$"../todd/Armature/Skeleton".physical_bones_start_simulation()
+	yield(get_tree().create_timer(.7),"timeout")
 	$"../deathload/AnimationPlayer".play_backwards("live")
 	$"../Timer".start()
 

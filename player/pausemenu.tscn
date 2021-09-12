@@ -5,7 +5,7 @@
 [ext_resource path="res://menu/mouse.tscn" type="PackedScene" id=3]
 [ext_resource path="res://menu/clic.wav" type="AudioStream" id=4]
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=1]
 size = 128
 outline_size = 6
 outline_color = Color( 0, 0, 0, 1 )
@@ -13,7 +13,7 @@ use_mipmaps = true
 use_filter = true
 font_data = ExtResource( 2 )
 
-[sub_resource type="Animation" id=4]
+[sub_resource type="Animation" id=2]
 length = 0.6
 tracks/0/type = "value"
 tracks/0/path = NodePath("ColorRect3:rect_size")
@@ -100,7 +100,7 @@ tracks/6/keys = {
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 
-[sub_resource type="Animation" id=5]
+[sub_resource type="Animation" id=3]
 length = 0.3
 tracks/0/type = "value"
 tracks/0/path = NodePath("ColorRect4:rect_position")
@@ -188,7 +188,7 @@ margin_top = 28.0
 margin_right = 1030.0
 margin_bottom = 191.0
 focus_mode = 0
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_colors/font_color_hover = Color( 0.733333, 0.733333, 0.733333, 1 )
 custom_colors/font_color_pressed = Color( 0.388235, 0.388235, 0.388235, 1 )
@@ -212,7 +212,7 @@ margin_left = 250.0
 margin_right = 1030.0
 margin_bottom = 163.0
 focus_mode = 0
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_colors/font_color_hover = Color( 0.733333, 0.733333, 0.733333, 1 )
 custom_colors/font_color_pressed = Color( 0.388235, 0.388235, 0.388235, 1 )
@@ -239,8 +239,8 @@ __meta__ = {
 }
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/menu = SubResource( 4 )
-anims/pauz = SubResource( 5 )
+anims/menu = SubResource( 2 )
+anims/pauz = SubResource( 3 )
 
 [node name="Node2D" parent="." instance=ExtResource( 3 )]
 
