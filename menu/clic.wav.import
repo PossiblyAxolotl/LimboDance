@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/clic.wav-ec434e149c533daba2be046396de7d9e.sample"
+
+[deps]
+
+source_file="res://menu/clic.wav"
+dest_files=[ "res://.import/clic.wav-ec434e149c533daba2be046396de7d9e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
